@@ -1,0 +1,272 @@
+<html>
+  <head>
+    <title>Covid Before And After</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="./assets/js/aframe-teleport-controls.min.js"></script>
+
+
+  </head>
+  <body>
+    <a-scene>
+      <!--Asset Management System-->
+     <a-assets>
+        <audio id="citynoise" src="citynoise.mp3"></audio>
+        <a-asset-item id="courthouse" src="./assets/Courthouse1.glb"></a-asset-item>  </a-assets> 
+        <a-asset-item id="citybuilding" src="./assets/CityBuilding.glb"></a-asset-item>
+        <a-asset-item id="skyscrapper2" src="./assets/Skyscraper2.glb"></a-asset-item>
+        <!--<a-asset-item id="garden" src="./assets/images/trees/GrassLawn.glb"></a-asset-item>-->
+        <a-asset-item id="slide" src="./assets/Childrenslide.glb"></a-asset-item>
+        <a-asset-item id="slider" src="./assets/SittingMale2.glb"></a-asset-item>
+        <a-asset-item id="AvatarMale" src="./assets/AvatarMale.glb"></a-asset-item>
+        <a-asset-item id="flower" src="./assets/Flower1.glb"></a-asset-item>
+        <a-asset-item id="tree" src="./assets/ShortCypressTree.glb"></a-asset-item>
+        <a-asset-item id="Rockfountain" src="./assets/Fountain.glb"></a-asset-item>
+        <a-asset-item id="group" src="./assets/Group.glb"></a-asset-item>
+        <a-asset-item id="SUV" src="./assets/SUV.glb"></a-asset-item>
+        <a-asset-item id="Ambulance" src="./assets/Ambulance.glb"></a-asset-item>
+        <a-asset-item id="BlackCar" src="./assets/Horizoncarblack.glb"></a-asset-item>
+        <a-asset-item id="Bus" src="./assets/PublicBus.glb"></a-asset-item>
+        <a-asset-item id="Truck" src="./assets/PickupTruck.glb"></a-asset-item>
+        <a-asset-item id="Police" src="./assets/Police.glb"></a-asset-item>
+        <a-asset-item id="Airplane" src="./assets/Airplane.glb"></a-asset-item>
+        <a-asset-item id="yellowbutterfly" src="./assets/MonarchButterfly.glb"></a-asset-item>
+        <a-asset-item id="Robin" src="./assets/Robin.glb"></a-asset-item>
+        <!--self made models-->
+        <a-asset-item id="Mask" src="./assets/maskred.glb"></a-asset-item>
+        <a-asset-item id="sanitizer" src="./assets/sanitizer.glb"></a-asset-item>
+        <a-asset-item id="cloud" src="./assets/cloudnew3.glb"></a-asset-item>
+        <a-asset-item id="signal" src="./assets/signal.glb"></a-asset-item>
+        <a-asset-item id="stone" src="./assets/stone.glb"></a-asset-item>
+       <!--self made models-->
+      </a-assets>  
+
+      <!--sound entity-->
+     
+      <!--<a-sound src="#citynoise"></a-sound>-->
+      <a-entity sound="src: #citynoise"></a-entity>
+      <!--sound entity-->
+
+      <!--Toggle Button-->
+      <div class="a-enter-vr" aframe-injected>
+        <button class="a-enter-vr-button" style="font-family:sans-serif,monospace;font-size:13px;font-weight:200;position:absolute;left:40px;bottom:3px;" 
+        onclick="SecondScene()" aframe-injected>Ok</button>
+      </div>
+       
+        <script type="text/javascript">
+
+          function SecondScene() {
+            document.getElementById('scene1').setAttribute('visible', 'false')
+            document.getElementById('scene2').setAttribute('visible', 'true')
+          }
+        </script>  
+       
+        <!--Toggle Button-->
+
+      <!-- Ceiling -->
+      <a-entity static-body geometry="primitive: box; depth: 50; height: 0.1; width: 160" position="0 30 5" material="shader: flat; side: double; opacity: 1;
+      src: url(images/skyrev.jpg); repeat: 1 1" rotation="0 180 0"></a-entity>
+          <!--cieling-->
+
+        <!--Floor-->
+        <a-entity static-body geometry="primitive: box; depth: 30; height: 0.1; width: 160" position="0 0 -5" material="shader: flat; side: double; opacity: 1;
+        src: url(images/planeT.jpg); repeat: 12 5"></a-entity>
+        <!--Foor-->
+
+       <!-- Walls  -->
+       <a-entity static-body geometry="primitive: box; depth: 1; height: 48; width: 30" position="-80 6.5 -5" rotation="0 90 0" material="shader: standard;
+       roughness: 1; src: url(images/skyrev.jpg); repeat: 1 1"></a-entity>
+           <a-entity static-body geometry="primitive: box; depth: 1; height: 48; width: 30" position="80 6.5 -5" rotation="0 90 0" material="shader: standard;
+       roughness: 1; src: url(images/skyrev.jpg); repeat: 1 1"></a-entity>
+           <a-entity static-body geometry="primitive: box; depth: 1; height: 48; width: 160" position="0 6.5 -20" rotation="0 0 0" material="shader: standard;
+       roughness: 1; src: url(images/skyrev.jpg); repeat: 1 1"></a-entity>
+           <a-entity static-body geometry="primitive: box; depth: 1; height: 48; width: 160" position="0 6.5 10" rotation="0 0 0" material="shader: standard;
+       roughness: 1; src: url(images/skyrev.jpg); repeat: 2 1"></a-entity>
+      <!--walls-->       
+
+      <!--Buildings-->
+      <a-gltf-model src="#courthouse" scale="1.5 1.3 1" rotation="0 0 0.0" position="0 0 -15"></a-gltf-model>
+      <a-gltf-model src="#skyscrapper2" scale="0.3 0.5 0.6" rotation="0.0 -80 0.0" position="-30 0 -16"></a-gltf-model>
+      <a-gltf-model src="#citybuilding" scale="120 90 90" rotation="0.0 0.0 0.0" position="29.5 0 -17"></a-gltf-model>
+    
+      <!--Buildings-->
+
+      <!--Road-->
+      <a-entity static-body geometry="primitive: box; depth: 1; height: 0.1; width: 20" position="-20.5 0.01 -10" rotation="0 90 0" material="shader: standard;
+       roughness: 1; src: url(images/road1.jpg); repeat: 1 1" scale="1 1 10"></a-entity>
+      <a-entity static-body geometry="primitive: box; depth: 1; height: 0.1; width: 20" position="-43.5 0.01 -10" rotation="0 90 0" material="shader: standard;
+       roughness: 1; src: url(images/road1.jpg); repeat: 1 1" scale="1 1 10"></a-entity>
+       <a-entity static-body geometry="primitive: box; depth: 1; height: 0.1; width: 20" position="21 0.01 -10" rotation="0 90 0" material="shader: standard;
+       roughness: 1; src: url(images/road1.jpg); repeat: 1 1" scale="1 1 10"></a-entity>
+       <a-entity static-body geometry="primitive: box; depth: 1; height: 0.1; width: 20" position="38.5 0.01 -10" rotation="0 90 0" material="shader: standard;
+       roughness: 1; src: url(images/road1.jpg); repeat: 1 1" scale="1 1 10"></a-entity>
+      <!--slant road-->
+      <a-entity static-body geometry="primitive: box; depth: 0.5; height: 0.1; width: 92" position="-2.5 0.01 1" rotation="0 0 0" material="shader: standard;
+      roughness: 1; src: url(images/road1.jpg); repeat: 1 1" scale="1 1 10"></a-entity>
+     
+      <!--slant road-->
+      <!--Road-->
+      
+      <!--Garden-->
+      <!--Garden left-->
+      <a-entity static-body geometry="primitive: box; depth: .1; height: 18; width: 28" position="-70 0.01 -11" rotation="90 0 0" material="shader: standard;
+      roughness: 1; src: url(images/Grass.jpg); repeat: 1 1"></a-entity>
+      
+      <!--<a-gltf-model src="#garden" scale="1350 900 900" rotation="0.0 0 0.0" position="-71 0.01 -10"></a-gltf-model>-->
+      <a-gltf-model src="#Rockfountain" scale="150 150 150" rotation="0.0 0 0.0" position="-75 0.1 -13"></a-gltf-model>
+      <a-gltf-model src="#flower" scale=".013 .013 .013" rotation="0.0 0 0.0" position="-74 0.43 -5"></a-gltf-model>
+      <a-gltf-model src="#flower" scale=".01 .01 .01" rotation="0.0 0 0.0" position="-75 0.43 -6"></a-gltf-model>
+      <a-gltf-model src="#flower" scale=".01 .01 .01" rotation="0.0 0 0.0" position="-76 0.43 -6"></a-gltf-model>
+      <a-gltf-model src="#tree" scale="100 100 100" rotation="0.0 0 0.0" position="-54 0.01 -15"></a-gltf-model>
+      <a-gltf-model src="#tree" scale="100 100 100" rotation="0.0 0 0.0" position="-54 0.01 -10"></a-gltf-model>
+      <a-gltf-model src="#tree" scale="100 100 100" rotation="0.0 0 0.0" position="-76 0.01 0"></a-gltf-model>
+      <a-gltf-model src="#tree" scale="100 100 100" rotation="0.0 0 0.0" position="-72 0.01 0"></a-gltf-model>
+      <!--Garden left-->
+    
+      <!--Garden right-->
+      <a-entity static-body geometry="primitive: box; depth: .1; height: 15; width: 30" position="65 0.01 -12" rotation="90 0 0" material="shader: standard;
+      roughness: 1; src: url(images/Grass.jpg); repeat: 1 1"></a-entity>
+      
+     <!-- <a-gltf-model src="#garden" scale="1500 900 900" rotation="0.0 0 0.0" position="65 0.01 -16"></a-gltf-model>-->
+      <a-gltf-model src="#slide" scale="1.3 1.3 1.3" rotation="0.0 -40 0.0" position="72 0.01 -16"></a-gltf-model>
+      <a-gltf-model src="#flower" scale=".013 .013 .013" rotation="0.0 0 0.0" position="53 0.01 -9"></a-gltf-model>
+      <a-gltf-model src="#flower" scale=".01 .01 .01" rotation="0.0 0 0.0" position="51 0.43 -10"></a-gltf-model>
+      <a-gltf-model src="#flower" scale=".01 .01 .01" rotation="0.0 0 0.0" position="53 0.43 -10"></a-gltf-model>
+      <a-gltf-model src="#tree" scale="100 100 100" rotation="0.0 0 0.0" position="48 0.04 -15"></a-gltf-model>
+      <a-gltf-model src="#tree" scale="100 100 100" rotation="0.0 0 0.0" position="48 0.02 -10"></a-gltf-model>
+      <a-gltf-model src="#stone" scale=".3 .3 .3" rotation="40.0 0 0.0" position="77.5 0.3 -6.8"></a-gltf-model>
+      <a-gltf-model src="#stone" scale=".2 .2 .2" rotation="-40.0 40 0.0" position="65.5 0.3 -6.8"></a-gltf-model>
+      <a-gltf-model src="#stone" scale=".3 .3 .3" rotation="40.0 0 0.0" position="63.5 0.3 -6.8"></a-gltf-model>
+      <!--Garden right-->
+      <!--Garden-->
+
+      <!--common traffic and vehicles-->
+      <a-gltf-model src="#BlackCar" scale="70 70 70" rotation="0.0 0 0.0" position="-41.5 0.01 -22"
+      animation="property: position; to: -41.5 0.01 -3; dur: 30000; easing: linear; delay:70000"></a-gltf-model>      
+      <a-gltf-model src="#Ambulance" scale="0.9 0.9 0.9" rotation="0.0 0 0.0" position="-41.5 0.01 -22"
+      animation="property: position; to: -41.5 0.01 -11.5; dur: 50000; easing: linear; delay:120000"></a-gltf-model>
+      <a-gltf-model src="#Police" scale="15 15 15" rotation="0.0 0 0.0" position="23 0.1 -22"
+      animation="property: position; to: 23 0.1 -7.3; dur: 50000; easing: linear; delay:50000"></a-gltf-model>
+      <a-gltf-model src="#Airplane" scale="0.8 0.8 0.8" rotation="-10 100 5" position="0 20 -20"
+      animation="property: position; to:75 25 2; dur: 25000; easing: linear; loop: true"></a-gltf-model>
+     <!--signal-->
+     <a-gltf-model src="#signal" scale=".5 .5 .5" rotation="0.0 90 0.0" position="-49.4 4.5 1.4"></a-gltf-model>  
+     <a-gltf-model src="#signal" scale=".5 .5 .5" rotation="0.0 180 0.0" position="21 4.5 3.8"></a-gltf-model>  
+     
+     <!--signal-->
+      <!--common traffic and vehicles-->
+
+      <!--clouds-->
+      <a-gltf-model src="#cloud" scale="1 1 1" rotation="50.0 -50.0 0.0" position="-77 27 -19.9"></a-gltf-model>
+      <!--clouds-->
+
+      <a-entity id="scene1" >
+      <!--traffic and vehicles-->
+      <a-gltf-model src="#SUV" scale="1 1 1" rotation="0.0 0 0.0" position="-41.5 0.01 -22" 
+      animation="property: position; to: -41.5 0.01 -7; dur: 40000; easing: linear; delay:100000"></a-gltf-model>
+       
+      <a-gltf-model src="#Bus" scale="01 01 01" rotation="0.0 0 0.0" position="-18.5 0.01 -15"
+      animation="property: position; to: -18.5 0.01 -5; dur: 30000; easing: linear; delay:80000"></a-gltf-model>   
+
+      <a-gltf-model src="#Truck" scale="13 13 13" rotation="0.0 0 0.0" position="23 0.05 -22" 
+      animation="property: position; to: 23 0.05 -3.3; dur: 40000; easing: linear; delay:20000"></a-gltf-model>
+       
+      <a-gltf-model src="#Bus" scale="01 01.2 01" rotation="0.0 0 0.0" position="41 0.01 -15"
+      animation="property: position; to: 41 0.01 -5; dur: 30000; easing: linear"></a-gltf-model>  
+    
+      <!--traffic and vehicles-->
+
+      <!--Airplane-->
+      <a-gltf-model src="#Airplane" scale="3 3 3" rotation="-10 -230 10" position="-50 20 -2"
+      animation="property: position; to: 40 25 -30; dur: 50000; easing: linear; loop: true"></a-gltf-model>
+      <!--Airplane-->
+
+      <!--gardenleft-->
+      <a-gltf-model src="#group" scale="0.9 0.9 0.9" rotation="0.0 0 0.0" position="-64.5 0.43 -8.5"></a-gltf-model>
+     <!--gardenleft-->
+
+     <!--gardenright-->
+     <a-gltf-model src="#slider" scale="1.7 1.7 1.7" rotation="0.0 -60 0.0" position="72.9 3.8 -17"
+     animation="property: position; to: 69 0.1 -12; dur: 3000; easing: linear"></a-gltf-model>
+      <a-gltf-model src="#stone" scale=".4 .4 .4" rotation="40.0 -160 0.0" position="61 0.4 -15"
+      animation="property: position; to: 61 2 -15; dir: alternate; loop: true; dur: 2000; delay:3000;"></a-gltf-model>
+      <a-gltf-model src="#slider" scale="3 3 3" rotation="0.0 40 0.0" position="59 0 -16"
+      animation="property: position; to: 60  0 -16; dir: alternate;  loop: true; dur: 1500"></a-gltf-model>
+      <a-gltf-model src="#slider" scale="2.5 2.5 2.5" rotation="0.0 -40 0.0" position="62.5 0 -16"
+      animation="property: position; to: 62 0 -15; dir: alternate; loop: true; dur: 1500; delay:1500"></a-gltf-model>
+       
+      <!--gardenright-->
+      </a-entity>
+        
+      <a-entity id="scene2" visible="false">
+        <a-gltf-model src="#Ambulance" scale="0.9 0.9 0.9" rotation="0.0 0 0.0" position="-18.5 0.01 -15"
+        animation="property: position; to: -18.5 0.01 -5; dur: 40000; easing: linear"></a-gltf-model>   
+        <a-gltf-model src="#Ambulance" scale="0.9 0.9 0.9" rotation="0.0 0 0.0" position="41 0.01 -15"
+        animation="property: position; to: 41 0.01 -5; dur: 40000; easing: linear"></a-gltf-model>  
+        
+        <!--birds flying-->
+        <a-gltf-model src="#yellowbutterfly" scale="5 5 5" rotation="-30 -200 0" position="-50 20 -2"
+      animation="property: position; to: 40 25 -18; dur: 25000; easing: linear; loop: true; "></a-gltf-model>
+      <a-gltf-model src="#yellowbutterfly" scale="5 5 5" rotation="-30 -200 0" position="-51 18 -2"
+      animation="property: position; to: 41 24 -18; dur: 25000; easing: linear; loop: true"></a-gltf-model>
+      <a-gltf-model src="#yellowbutterfly" scale="5 5 5" rotation="-30 -200 0" position="-51.5 19 -2"
+      animation="property: position; to: 42 23 -18; dur: 25000; easing: linear; loop: true"></a-gltf-model>
+      <a-gltf-model src="#yellowbutterfly" scale="5 5 5" rotation="-30 -200 0" position="-52 21 -2"
+      animation="property: position; to: 40 25 -18; dur: 25000; easing: linear; loop: true"></a-gltf-model>
+      <a-gltf-model src="#yellowbutterfly" scale="5 5 5" rotation="-30 -200 0" position="-50 22 -2"
+      animation="property: position; to: 41.5 22 -18; dur: 25000; easing: linear; loop: true"></a-gltf-model>
+      <a-gltf-model src="#yellowbutterfly" scale="5 5 5" rotation="-30 -200 0" position="-52 20 -2"
+      animation="property: position; to: 41 23 -18; dur: 25000; easing: linear; loop: true"></a-gltf-model>
+      <a-gltf-model src="#yellowbutterfly" scale="5 5 5" rotation="-30 -200 0" position="-51.5 18 -2"
+      animation="property: position; to: 40.4 22 -18; dur: 25000; easing: linear; loop: true"></a-gltf-model>
+      <a-gltf-model src="#yellowbutterfly" scale="5 5 5" rotation="-30 -200 0" position="-50 17 -2"
+      animation="property: position; to: 42 24 -18; dur: 25000; easing: linear; loop: true"></a-gltf-model>  
+        <!--bird-->
+
+        <!--bird sitting left -->
+       <a-gltf-model src="#Robin" scale="40 40 40" rotation="0.0 0 0.0" position="-64.5 0.43 -10.5"></a-gltf-model>
+       <a-gltf-model src="#Robin" scale="50 50 50" rotation="0.0 0 0.0" position="-68.5 0.43 -5.5"></a-gltf-model>
+       <a-gltf-model src="#Robin" scale="40 40 40" rotation="0.0 0 0.0" position="-62.5 0.43 -10.5"></a-gltf-model>
+       <a-gltf-model src="#Robin" scale="40 40 40" rotation="0.0 0 0.0" position="-70.5 0.43 -6.5"></a-gltf-model>
+       <a-gltf-model src="#Robin" scale="40 40 40" rotation="0.0 0 0.0" position="-69 0.43 -4.5"></a-gltf-model>
+       <a-gltf-model src="#Robin" scale="40 40 40" rotation="0.0 0 0.0" position="-69.5 0.43 -4"></a-gltf-model>
+       <a-gltf-model src="#flower" scale=".013 .013 .013" rotation="0.0 0 0.0" position="-59 0.43 -7"></a-gltf-model>
+       <a-gltf-model src="#flower" scale=".01 .01 .01" rotation="0.0 0 0.0" position="-58.5 0.43 -5"></a-gltf-model>
+       
+        <!--bird sitting-->
+     <!--bird sitting right -->
+     <a-gltf-model src="#Robin" scale="40 40 40" rotation="0.0 0 0.0" position="64.5 0.43 -12.5"></a-gltf-model>
+     <a-gltf-model src="#Robin" scale="50 50 50" rotation="0.0 0 0.0" position="68.5 0.43 -8.5"></a-gltf-model>
+     <a-gltf-model src="#Robin" scale="40 40 40" rotation="0.0 0 0.0" position="62.5 0.43 -12.5"></a-gltf-model>
+     <a-gltf-model src="#Robin" scale="40 40 40" rotation="0.0 0 0.0" position="70.5 0.43 -9"></a-gltf-model>
+     <a-gltf-model src="#Robin" scale="40 40 40" rotation="0.0 0 0.0" position="69 0.43 -8.5"></a-gltf-model>
+     <a-gltf-model src="#Robin" scale="40 40 40" rotation="0.0 0 0.0" position="69.5 0.43 -8"></a-gltf-model>
+     <a-gltf-model src="#flower" scale=".013 .013 .013" rotation="0.0 0 0.0" position="59 0.43 -9"></a-gltf-model>
+     <a-gltf-model src="#flower" scale=".01 .01 .01" rotation="0.0 0 0.0" position="58.5 0.43 -8"></a-gltf-model>
+     
+      <!--bird sitting-->
+
+      <!--Avatar Male-->
+      <a-gltf-model src="#AvatarMale" scale="1.6 1.6 1.6" rotation="0.0 0 0.0" position="55.5 0.43 -14"></a-gltf-model>
+      <a-gltf-model src="#Mask" scale="0.15 0.2 0.1" rotation="0 0 105.0" position="56 2.75 -13.6"></a-gltf-model>
+      <a-gltf-model src="#sanitizer" scale="0.08 0.08 0.08" rotation="0 90 90.0" position="56 1.27 -14"></a-gltf-model>
+      <!--Avatar Male-->
+      </a-entity>
+
+
+
+
+      
+      <!-- cursor-->
+      <a-camera position="0 5 0" rotation="-80 -40 0">
+        <a-cursor id="cursor" 
+        animation__click="property: scale; from: 0.1 0.1 0.1; to: 1 1 1; easing: linear; dur: 100; startEvents: click"
+        animation__clickreset="property: scale; to: 0.1 0.1 0.1; dur: 1; startEvents: animationcomplete__click"
+        animation__fusing="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; easing: linear; dur: 100; startEvents: fusing">
+       </a-cursor>
+       </a-camera>
+        <!-- cursor-->
+    
+
+      </a-scene>
+  </body>
+</html>
