@@ -17,15 +17,19 @@ For creating the models, i have used the blender software. I have created 6 mode
 ![](images/trafficsignal.PNG)
 
 ## Cloud
+![](images/cloud.PNG)
 
 ## Red Color Mask
+![](images/redmask.PNG)
 
 ## Sanitizer
+![](images/sanitizer.PNG)
 
 ## Stones/ Pebbles
+![](images/stone.PNG)
 
 ## FootBall
-
+![](images/Football.PNG)
 
 
 
