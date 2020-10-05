@@ -4,7 +4,7 @@ This project mainly focuses on the human experience from 'inside out' vr. My pro
 
 # Useful Links
 
-## Project Github Page Link 
+## Project Github Page Link https://vaishnaveesharma.github.io/VR-Project1/
 
 ## Video Link
 
