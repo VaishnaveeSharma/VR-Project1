@@ -50,26 +50,38 @@ The user has the access to switch 'on or off' the light attached to the center b
 For creating the models, i have used the blender software. I have created 6 models in blender from scratch. They are as follows:-
 
 ## Traffic Light
+
+There two of these traffic lights in the environment. one is on the left and the other is on the right of the environment.
 <img src="images/trafficsignal.PNG" width="300" height="300">
 
 ## FootBall
+
+Two kids playing with the football can be seen on the greemn grass garden on the right side of the camera.
 <img src="images/Football.PNG" width="200" height="200">
 
 ## Cloud
+
+This can be seen on the left side of the environment. Besides the skyscapper building.
 <img src="images/cloud.PNG" width="200" height="200">
 
 ## Red Color Mask
+
+This can be seen on the face of the person standing on the grass garden on the right.
 <img src="images/redmask.PNG" width="200" height="200">
 
 ## Sanitizer
+
+The person standing on the grass garden is holding this sanitizer bottle in his hand.
 <img src="images/sanitizer.PNG" width="200" height="200">
 
 ## Stones/ Pebbles
+
+These stones can be seen on the green grass garden on the right side of the environment.
 <img src="images/stone.PNG" width="200" height="200">
 
 # Issues
 
-Honeslty, it was a challenging to project. But at the same time it was fun and learning to work on it. While working on the project there were many issues which i have faced. Some of them are:-
+It was a challenging project. But at the same time it was fun and learning to work on it. While working on the project there were many issues which i have faced. Some of them are:-
 
 ## Smooth cursor movement
 
