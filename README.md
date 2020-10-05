@@ -14,22 +14,22 @@ So my idea was to highlight the good effects of corona virus in my project like 
 For creating the models, i have used the blender software. I have created 6 models in blender from scratch. They are as follows:-
 
 ## Traffic Light
-<img src="images/trafficsignal.PNG" width="100" height="100">
+<img src="images/trafficsignal.PNG" width="300" height="300">
 
 ## Cloud
-![](images/cloud.PNG)
+<img src="images/cloud.PNG" width="300" height="300">
 
 ## Red Color Mask
-![](images/redmask.PNG)
+<img src="images/redmask.PNG" width="300" height="300">
 
 ## Sanitizer
-![](images/sanitizer.PNG)
+<img src="images/sanitizer.PNG" width="300" height="300">
 
 ## Stones/ Pebbles
-![](images/stone.PNG)
+<img src="images/stone.PNG" width="300" height="300">
 
 ## FootBall
-![](images/Football.PNG)
+<img src="images/Football.PNG" width="300" height="300">
 
 
 
