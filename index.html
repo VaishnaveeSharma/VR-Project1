@@ -9,8 +9,8 @@
     <script>
       // Global Variables
       lampOn = false;			// Indicates if lamp is on/off
-      nightOn = false;	
-      scene = false;  
+      nightOn = false;			//indicates night mode is off
+      scene = false;  			//indicates scene2 is off
       
     </script>
   </head>
@@ -42,19 +42,13 @@
         <a-asset-item id="cloud" src="assets/cloudnew3.glb"></a-asset-item>
         <a-asset-item id="signal" src="assets/signal.glb"></a-asset-item>
         <a-asset-item id="stone" src="assets/stone.glb"></a-asset-item>
+	<a-asset-item id="football" src="assets/Football.glb"></a-asset-item>
        <!--self made models-->
         <audio id="CityNoise" src="audio/citynoise.mp3"></audio>
 	<audio id="BirdSound" src="audio/BirdSound.mp3"></audio>
 	 		
       </a-assets>  
 
-      <!-- cursor-->
-      <!--<a-entity id="rig" position="50 5 8">
-        <a-camera id="camera">
-          <a-entity raycaster="far: 150; objects: .intersectable" cursor geometry="primitive: ring; radiusOuter: 0.015;
-                    radiusInner: 0.01; segmentsTheta: 32" material="color: #283644; shader: flat" position="0 0 -0.75"></a-entity>
-        </a-camera>
-      </a-entity>-->
       <a-entity id="rig" movement-controls position="0 8 8">
         <a-entity id="camera"
                   camera
@@ -63,21 +57,7 @@
                   <a-entity cursor="fuse: false" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: black; shader: flat"></a-entity>
         </a-entity>
       </a-entity>
-
-     
-
-      
-       <!--Toggle Button-->
-      <!--<div class="a-enter-vr" aframe-injected>
-        <button class="a-enter-vr-button" style="font-family:sans-serif,monospace;font-size:13px;font-weight:200;position:absolute;left:40px;bottom:3px;" 
-        onclick="SecondScene()" aframe-injected>Ok</button>
-      </div>
-    
-     function CovidMode() {
-            document.getElementById('scene1').setAttribute('visible', 'false')
-            document.getElementById('scene2').setAttribute('visible', 'true')
-          }-->
-       
+ 
         <script type="text/javascript">
 
           function lampClick()
@@ -217,21 +197,7 @@
      
       <!--slant road-->
       <!--Road-->
-      
-      <!--Garden-->
-      <!--Garden left-->
-      <!--<a-entity static-body geometry="primitive: box; depth: .1; height: 18; width: 28" position="-70 0.01 -11" rotation="90 0 0" material="shader: standard;
-      roughness: 1; src: url(images/Grass.jpg); repeat: 1 1"></a-entity>
-      <a-gltf-model src="#Rockfountain" scale="150 150 150" rotation="0.0 0 0.0" position="-75 0.1 -13"></a-gltf-model>
-      <a-gltf-model src="#flower" scale=".013 .013 .013" rotation="0.0 0 0.0" position="-74 0.43 -5"></a-gltf-model>
-      <a-gltf-model src="#flower" scale=".01 .01 .01" rotation="0.0 0 0.0" position="-75 0.43 -6"></a-gltf-model>
-      <a-gltf-model src="#flower" scale=".01 .01 .01" rotation="0.0 0 0.0" position="-76 0.43 -6"></a-gltf-model>
-      <a-gltf-model src="#tree" scale="100 100 100" rotation="0.0 0 0.0" position="-54 0.01 -15"></a-gltf-model>
-      <a-gltf-model src="#tree" scale="100 100 100" rotation="0.0 0 0.0" position="-54 0.01 -10"></a-gltf-model>
-      <a-gltf-model src="#tree" scale="100 100 100" rotation="0.0 0 0.0" position="-76 0.01 0"></a-gltf-model>
-      <a-gltf-model src="#tree" scale="100 100 100" rotation="0.0 0 0.0" position="-72 0.01 0"></a-gltf-model>-->
-      <!--Garden left-->
-    
+        
       <!--Garden right-->
       <a-entity static-body geometry="primitive: box; depth: .1; height: 15; width: 30" position="65 0.01 -12" rotation="90 0 0" material="shader: standard;
       roughness: 1; src: url(images/Grass.jpg); repeat: 1 1"></a-entity>
@@ -241,7 +207,6 @@
       <a-gltf-model src="#flower" scale=".01 .01 .01" rotation="0.0 0 0.0" position="51 0.43 -10"></a-gltf-model>
       <a-gltf-model src="#flower" scale=".01 .01 .01" rotation="0.0 0 0.0" position="53 0.43 -10"></a-gltf-model>
       <a-gltf-model src="#tree" scale="100 100 100" rotation="0.0 0 0.0" position="48 0.04 -15"></a-gltf-model>
-      <!--<a-gltf-model src="#tree" scale="100 100 100" rotation="0.0 0 0.0" position="48 0.02 -10"></a-gltf-model>-->
       <a-gltf-model src="#stone" scale=".3 .3 .3" rotation="40.0 0 0.0" position="77.5 0.3 -6.8"></a-gltf-model>
       <a-gltf-model src="#stone" scale=".2 .2 .2" rotation="-40.0 40 0.0" position="65.5 0.3 -6.8"></a-gltf-model>
       <a-gltf-model src="#stone" scale=".3 .3 .3" rotation="40.0 0 0.0" position="63.5 0.3 -6.8"></a-gltf-model>
@@ -295,15 +260,11 @@
       animation="property: position; to: 40 25 -30; dur: 50000; easing: linear; loop: true"></a-gltf-model>
       <!--Airplane-->
 
-      <!--gardenleft-->
-      <!--<a-gltf-model src="#group" scale="0.9 0.9 0.9" rotation="0.0 0 0.0" position="-64.5 0.43 -8.5"></a-gltf-model>-->
-     <!--gardenleft-->
-
-     <!--gardenright-->
+      <!--gardenright-->
      <a-gltf-model src="#slider" scale="1.7 1.7 1.7" rotation="0.0 -55 0.0" position="72.9 3.4 -17"
-     animation="property: position; to:68.8 0.1 -12; dir: alternate; loop: false; dur: 3500; delay:5000"></a-gltf-model>
+     animation="property: position; to:68.8 0.1 -12; dir: alternate; loop: false; dur: 3500; delay:25000"></a-gltf-model>
       
-      <a-gltf-model src="#stone" scale=".4 .4 .4" rotation="40.0 -160 0.0" position="61 0.4 -15"
+      <a-gltf-model src="#football" scale=".4 .4 .4" rotation="40.0 -160 0.0" position="61 0.4 -15"
       animation="property: position; to: 61 2 -15; dir: alternate; loop: true; dur: 2000; delay:3000;"></a-gltf-model>
       <a-gltf-model src="#slider" scale="3 3 3" rotation="0.0 40 0.0" position="59 -0.1 -16"
       animation="property: position; to: 60  -0.1 -16; dir: alternate;  loop: true; dur: 1500"></a-gltf-model>
@@ -338,21 +299,7 @@
       animation="property: position; to: 40.4 22 -18; dur: 25000; easing: linear; loop: true"></a-gltf-model>
       <a-gltf-model src="#yellowbutterfly" scale="5 5 5" rotation="-30 -200 0" position="-50 17 -2"
       animation="property: position; to: 42 24 -18; dur: 25000; easing: linear; loop: true"></a-gltf-model>  
-        <!--bird-->
-
-        <!--bird sitting left -->
-       <!--<a-gltf-model src="#Robin" scale="40 40 40" rotation="0.0 0 0.0" position="-64.5 0.43 -10.5"></a-gltf-model>
-       <a-gltf-model src="#Robin" scale="50 50 50" rotation="0.0 0 0.0" position="-68.5 0.43 -5.5"></a-gltf-model>
-       <a-gltf-model src="#Robin" scale="40 40 40" rotation="0.0 0 0.0" position="-62.5 0.43 -10.5"></a-gltf-model>
-       <a-gltf-model src="#Robin" scale="40 40 40" rotation="0.0 0 0.0" position="-70.5 0.43 -6.5"></a-gltf-model>
-       <a-gltf-model src="#Robin" scale="40 40 40" rotation="0.0 0 0.0" position="-69 0.43 -4.5"></a-gltf-model>
-       <a-gltf-model src="#Robin" scale="40 40 40" rotation="0.0 0 0.0" position="-69.5 0.43 -4"></a-gltf-model>
-       <a-gltf-model src="#flower" scale=".013 .013 .013" rotation="0.0 0 0.0" position="-59 0.43 -7"></a-gltf-model>
-       <a-gltf-model src="#flower" scale=".01 .01 .01" rotation="0.0 0 0.0" position="-58.5 0.43 -5"></a-gltf-model>-->1
-       
-        <!--bird sitting-->
-     <!--bird sitting right -->
-     
+        <!--bird-->  
      
      <a-entity onclick="BirdSound()" position="28 1.83 5" rotation="0 -90 0">
       <a-text id="Soundtext" value="Play Bird Sound" color="#000" position="0 0 0" scale="1.5 1.5 1.5"></a-text>      
