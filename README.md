@@ -4,6 +4,12 @@ This project mainly focuses on the human experience from 'inside out' vr. My pro
 
 # Useful Links
 
+## Project Github Page Link 
+
+## Video Link
+
+## Demo Link
+
 # Motivation/ Idea
 
 Covid-19 has affected all of us in some way or the other. Many of us bored of sitting at home we miss going out. Also when we go out for urgent work we have to carry mask and sanitizer with us for safety purposes. Despite causing a lot of troubles for humans Covid-19 proved to be good for the 'nature'. The air pollution, water polltion has reduced considerably, birds and animals are becoming more flourished even in the cities. 
