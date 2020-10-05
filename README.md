@@ -1,4 +1,4 @@
-# 4331 Virtual Reality Project 1 in A-Frame
+# 5331 Virtual Reality Project 1 in A-Frame
 
 This project mainly focuses on the human experience from 'inside out' vr. My project has many 3D gltf models (downloaded from othersites), some 3D models (created by me), dynamic objects to interact with, some objects having animation, controlled lighting for day/night simulation, audio sounds which give the feel of being present in the environment. The loading time of the project webpage is 4.98 seconds.
 
