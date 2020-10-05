@@ -14,7 +14,7 @@ So my idea was to highlight the good effects of corona virus in my project like 
 For creating the models, i have used the blender software. I have created 6 models in blender from scratch. They are as follows:-
 
 ## Traffic Light
-![](images/trafficsignal.PNG){:height="700px" width="400px"}
+<img src="images/trafficsignal.PNG" width="100" height="100">
 
 ## Cloud
 ![](images/cloud.PNG)
